@@ -16,6 +16,8 @@ public class Sort {
         //array and sort them and return the new sorted array.
 
         int [] myIntegers = getIntegers(5);
+        int[] sorted = sortIntegers(myIntegers);
+        printArray(sorted);
     }
     public static int[] getIntegers(int container){
         int[] array =new int[container];
@@ -39,7 +41,7 @@ public class Sort {
         int temp;
         while (flag) {
             flag = false;
-            for (i = 0; i < sortedArray.length-1; i++) {
+            for (int i = 0; i < sortedArray.length-1; i++) {
                 if(sortedArray[i] < sortedArray[i+1]) {
                     temp = sortedArray[i];
                     sortedArray[i] = sortedArray[i +1];
