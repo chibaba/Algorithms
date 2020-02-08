@@ -10,7 +10,7 @@ public class BubbleClass {
             }
         }
         for (int i = 0; i < collection.length; i++){
-            System.out.println(collection[i]);
+            System.out.print(collection[i]);
         }
 
     }
